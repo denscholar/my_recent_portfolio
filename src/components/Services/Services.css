@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 60px;
+    padding: 30px;
     border: 2px solid white;
     border-radius: 10px;
     transition: 0.4s;
@@ -36,3 +36,38 @@
     gap: 40px;
     margin-bottom: 80px;
 }
+
+.services-format h3{
+    font-size: 28px;
+    font-weight: 600;    
+}
+.services-format h2{
+    font-size: 22px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #f953c6 50%, #b91d73 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-format .desc{
+    color: #d4d4d4;
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+
+.services-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.services-format:hover{
+    border: 2px solid #f953c6;
+}
+

@@ -1,40 +1,34 @@
 const serviceData = [
   {
-    id: 1,
-    title: "Web Development",
-    description: "",
+    s_no: "01",
+    title: "Web App Development",
+    description: "Building responsive and scalable web applications for seamless user experiences.",
   },
   {
-    id: 2,
+    s_no: "02",
     title: "UI/UX",
-    description: "",
+    description: "Crafting intuitive and visually appealing interfaces that enhance usability.",
   },
   {
-    id: 3,
+    s_no: "03",
     title: "Mobile App Development",
-    description: "",
+    description: "Creating high-performance mobile applications for iOS and Android platforms.",
   },
   {
-    id: 4,
-    title: "Web Development",
-    description: "",
+    s_no: "04",
+    title: "Data Analytics",
+    description: "Transforming data into actionable insights to drive smarter decisions.",
   },
   {
-    id: 5,
-    title: "Web Development",
-    description: "",
+    s_no: "05",
+    title: "Online Training",
+    description: "Providing expert-led virtual courses to boost skills and career growth.",
   },
   {
-    id: 6,
-    title: "Web Development",
-    description: "",
-  },
-  {
-    id: 7,
-    title: "Web Development",
-    description: "",
+    s_no: "06",
+    title: "Content Creation",
+    description: "Developing engaging and impactful content for digital platforms.",
   },
 ];
 
-
-export default serviceData
+export default serviceData;

@@ -32,10 +32,11 @@
 }
 
 .hero h1 span {
-  background: linear-gradient(270deg, #de622d 10%, #00f846 100%);
+  background: linear-gradient(270deg, #f953c6 50%, #b91d73 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .hero p {
@@ -58,7 +59,7 @@
   margin-top: 20px;
   padding: 10px 35px;
   border-radius: 50px;
-  background: linear-gradient(270deg, #DE622D 10%, #0057f8e8 100%);
+  background: linear-gradient(270deg, #DE622D 50%, #DE622D 100%);;
   cursor: pointer;
 }
 
@@ -75,5 +76,5 @@
 }
 
 .hero-resume:hover {
-  border: 2px solid #008000;
+  border: 2px solid #f953c6;
 }
