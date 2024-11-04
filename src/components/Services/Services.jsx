@@ -7,7 +7,7 @@ const Services = () => {
     return (
         <div className='services'>
             <div className="services-title">
-                <h1>My Services</h1>
+                <h1>What I do</h1>
                 {/* <img src="" alt="" /> */}
             </div>
             <div className="services-container">
