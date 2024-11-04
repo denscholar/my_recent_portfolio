@@ -1,0 +1,51 @@
+.image-wrapper {
+  width: 250px;
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sub-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E446B0;
+  opacity: 0;
+  transition: 0.50s ease-in-out;
+}
+
+.image-wrapper:hover .sub-container {
+  opacity: 1;
+  margin: 15px;
+}
+
+.sub-container .action-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+.sub-container .action-buttons a{
+    background-color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    width: auto;
+    font-size: 14px;
+    color: black;
+
+}
