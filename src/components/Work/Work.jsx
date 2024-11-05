@@ -1,5 +1,7 @@
 import React from 'react'
 import './Work.css';
+import { IoArrowForward } from "react-icons/io5";
+import { IoArrowBack } from "react-icons/io5";
 
 
 const Work = (props) => {
@@ -12,8 +14,8 @@ const Work = (props) => {
       <div className="sub-container">
         <p>{w_name}</p>
         <div className="action-buttons">
-          <a href={url} target='_blank'>Project</a>
-          <a href={gitHub} target='_blank'>GitHub</a>
+          <a href={url} target='_blank'><IoArrowBack /> Project </a>
+          <a href={gitHub} target='_blank'>GitHub <IoArrowForward /></a>
         </div>
       </div>
     </div>

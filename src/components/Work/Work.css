@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #E446B0;
+  background: linear-gradient(270deg, #f953c6 50%, #b91d73 100%);
   opacity: 0;
   transition: 0.50s ease-in-out;
 }
@@ -33,16 +33,21 @@
 .sub-container .action-buttons{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin: 10px;
 
 }
 
 .sub-container .action-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     background-color: white;
     text-decoration: none;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 50px;
     outline: none;
     width: auto;
     font-size: 14px;

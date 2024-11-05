@@ -43,6 +43,20 @@ const mywork_data = [
     url: "http://",
     gitHub: "https://github.com",
   },
+  {
+    w_no: 7,
+    w_name: "Web Development",
+    w_img: portfolio1,
+    url: "http://",
+    gitHub: "https://github.com",
+  },
+  {
+    w_no: 8,
+    w_name: "Web Development",
+    w_img: portfolio1,
+    url: "http://",
+    gitHub: "https://github.com",
+  },
 ];
 
 export default mywork_data;
