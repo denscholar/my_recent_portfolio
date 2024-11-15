@@ -1,13 +1,43 @@
 import './Contact.css'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaEnvelope } from 'react-icons/fa';
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 
 
 const Contact = () => {
+    const [email, setEmail] = useState("")
+    const [name, setName] = useState("")
+    const [message, setMessage] = useState("")
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "6fcf8220-8074-45f2-9c07-45111921f99e");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            alert(res.message);
+            setEmail("");
+            setMessage("");
+            setName("");
+        }
+    };
+
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className="contact-title">
                 <h1>Get in touch</h1>
             </div>
@@ -28,13 +58,13 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form action="" className="contact-right">
+                <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="Your name">Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' />
+                    <input type="text" value={name} placeholder='Enter your name' name='name' onChange={(e) => setName(e.target.value)} required />
                     <label htmlFor="">Email</label>
-                    <input type="text" placeholder='Enter your email' name='email' />
-                    <label htmlFor="">Write ypur message here</label>
-                    <textarea name="message" rows="8"  id="" placeholder='Enter your message'></textarea>
+                    <input type="email" value={email} placeholder='Enter your email' name='email' onChange={(e) => setEmail(e.target.value)} required />
+                    <label htmlFor="">Write your message here</label>
+                    <textarea name="message" value={message} rows="8" id="" placeholder='Enter your message' onChange={(e) => setMessage(e.target.value)} required></textarea>
                     <button type='submit' className="contact-submit">
                         Submit Now
                     </button>

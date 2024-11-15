@@ -8,7 +8,7 @@ import React from 'react'
 const MyWork = () => {
 
     return (
-        <div className='mywork'>
+        <div className='mywork' id='services'>
             <div className="mywork-title">
                 <h1>My Latest Projects</h1>
             </div>
